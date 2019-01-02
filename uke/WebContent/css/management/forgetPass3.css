@@ -1,0 +1,89 @@
+*{
+        margin:0;
+        padding: 0;
+    }
+    .title{
+        width:100%;
+        height:70px;
+        box-shadow: 2px 2px 2px 1px #DBDBDB;
+    }
+    .title h4{
+        margin-top:24px;
+    }
+    #logo{
+        float: left;
+        margin-top:8px;
+    }
+
+    #logo img{
+        width:54px;
+        height:49px;
+    }
+    #text{
+        float: left;
+        margin-left:80px;
+    }
+    #login{
+        float: right;
+        margin-top:20px;
+        font-size: 15px;
+    }
+
+    /*start container */
+    .panel{
+        width:100%;
+        height:400px;
+        margin-top: 10px;
+    }
+    .panel-heading img{
+        width:50px;
+        height:50px;
+    }
+    .panel-heading span{
+        margin:0 20px 0 20px;
+        float: left;
+    }
+    .panel-heading {
+        box-sizing: border-box;
+        padding-left: 110px;
+    }
+    .panel-heading span:nth-child(3) p{
+        margin-left: -8px;
+    }
+    .panel-heading span:nth-child(2),.panel-heading span:nth-child(4){
+        width:280px;
+        height:6px;
+        margin-top:20px;
+        background: #24af08;
+    }
+
+    .panel-body{
+        margin-top: 100px;
+    }
+
+    .form #submit{
+        width: 240px;
+        margin-left:75px;
+        margin-top:30px;
+    }
+    .footer{
+        width:100%;
+        height:100px;
+        text-align: center;
+        border-top: 1px solid #DBDBDB;
+        background: #EBEBEB;
+        line-height: 50px;
+        margin-top:60px;
+    }
+
+    #content{
+        margin:10px 0 0 400px;
+        font-size: 18px;
+    }
+    #content span{
+        display: block;
+        float: left;
+    }
+    #content span:nth-child(2){
+        margin: 40px 0 0 10px;
+    }

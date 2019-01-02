@@ -1,0 +1,352 @@
+ * { margin: 0; padding: 0; }
+        body{
+            padding-top: 70px;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration:none;
+            color:#949494;
+        }
+        a:hover{
+            text-decoration:none;
+        }
+
+        /*start nav*/
+        #navlist{
+            position: absolute;
+            top: 51px;
+            width:95px;
+            height:140px;
+            background: #ffffff;
+            box-shadow: 1px 1px 10px 1px #969696;
+        }
+        #navlist li{
+            margin-top: 5px;
+            margin-bottom: 7px;
+
+        }
+        #navlist li a{
+            text-decoration:none;
+            color:#949494;
+            margin-left: 20px;
+        }
+        #navlist li a:hover{
+            color:deepskyblue;
+        }
+
+        .v-enter,
+        .v-leave-to{
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .v-enter-active,
+        .v-leave-active{
+            transition: all 0.4s ease;
+        }
+
+        /* end nav*/
+
+        /* start search*/
+        #logo{
+            width:92px;
+            height:86px;
+            margin-left:50px;
+            margin:20px 0;
+        }
+
+        .search{
+            margin-top:-18px;
+            position: relative;
+            box-shadow: 2px 1px 5px 1px #ABABAB;
+        }
+        .search form{
+            position: absolute;
+            top:20%;
+            right:30%;
+        }
+        .search form input{
+            height:45px;
+        }
+        .search form button{
+            height:45px;
+            width:70px;
+            margin-left: -10px;
+        }
+
+        .search ul{
+            margin-top:10px;
+        }
+        .search ul li{
+            float: left;
+            margin-right:10px;
+        }
+        .search ul li a:hover{
+            color:deepskyblue;
+            text-decoration:none;
+        }
+
+        /* end search*/
+
+        /*start main*/
+        .main{
+            background: #EBEBEB;
+           	padding-bottom: 10px;
+        }
+        .main .container{
+            background: white;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+        .leftPart img{
+            width:346px;
+            height: 319px;
+            float:left;
+        }
+        .detail{
+            float: left;
+            margin-left: 20px;
+        }
+        .rightPart{
+            float: right;
+            width:250px;
+            height:400px;
+            border-left: 1px dotted  #000;
+        }
+        .detail #part1{
+            width:500px;
+            height:100px;
+            background: #F0F0F0;
+            color:white;
+
+        }
+        .detail #part1 span{
+            padding:0 20px;
+        }
+        .detail #part1 span:nth-child(1){
+            background: deepskyblue;
+            width:500px;
+            height:40px;
+            display: block;
+            line-height: 35px;
+        }
+        .detail #part1 span:nth-child(2){
+            color:	#8E8E8E;
+            line-height: 60px;
+
+
+        }
+        .detail #part1 span:nth-child(3){
+            margin-left:120px;
+            border-left:1px dotted black;
+            color: #8E8E8E;
+            height:100px;
+        }
+
+
+        .detail #part2{
+            margin-top:30px;
+        }
+        .detail #part2 span{
+            height:40px;
+            width:300px;
+            display: block;
+            margin-right:30px;
+            margin-bottom: 30px;
+        }
+        .detail #part2 span input{
+            margin:0 20px;
+            width:50px;
+        }
+        .detail #part2 img{
+            position: absolute;
+            left:484px;
+            width:20px;
+            height:20px;
+
+        }
+        .detail #part2 .icon1{
+			cursor:pointer;
+            font-size:13px;
+            color:white;
+            padding:12px 40px;
+            width:100px;
+            background:red;
+        }
+        .detail #part2 .icon1 img{
+            position: absolute;
+            left:482px;
+            margin-top:10px;
+        }	
+        #part2 #submit{
+        	border: 1px solid red;
+            font-size:16px;
+            padding:7px 40px;
+            color: red;
+            margin-left: 20px;
+            background: white;
+        }
+        #part2 #submit:hover{
+        	background: red;
+            color:white;
+        }
+        .detail #part2 .icon2{
+            float: right;
+            margin-top:10px;
+            cursor:pointer;
+        }
+        .detail h5{
+            margin-top:40px;
+        }
+        .detail #part2 .icon2 img{
+            position: absolute;
+             left:885px;
+        }
+        #part2 #buy{
+        	border: 1px solid red;
+            font-size:16px;
+            padding:7px 40px;
+            color: red;
+            margin-left: 20px;
+            background: white;
+        }
+        #part2 #buy:hover{
+        	background: red;
+            color:white;
+        }
+        #icon{
+            width:21px;
+            height:21px;
+            margin-right: 10px;
+            margin-top:-5px;
+        }
+        #collect{
+            width:20px;
+            height:20px;
+        }
+
+        .rightPart{
+            padding-left: 10px;
+        }
+        .rightPart h5{
+            margin-left: 40px;
+        }
+        .rightPart li{
+            color:#9C9C9C;
+            border:2px solid white;
+            margin:15px 0;
+        }
+        .rightPart li:hover{
+            border:2px solid red;
+            transition:all 0.5s ease-in-out;
+        }
+        .rightPart span{
+            margin:10px;
+            display: block;
+        }
+        .rightPart img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+		#empty{
+            width:200px;
+            margin:100px 0 0 479px;
+        }
+        /* end main*/
+
+        /* start evaluate*/
+        .evaluate{
+            margin-top:414px;
+            padding-bottom: 99px;
+        }
+        .tab-content .evaluateCenter li{
+            border-radius: 10px;
+            height:90px;
+            margin:10px 0;
+            box-shadow: 2px 2px 7px 2px #E5E5E5;
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        .evaluateCenter img{
+            width:40px;
+            height:40px;
+            margin:10px;
+        }
+        .evaluateText{
+            width:70%;
+            height:100%;
+            float: left;
+            padding: 3px;
+        }
+
+        .evaluatePerson{
+            width:30%;
+            height:80%;
+            float: left;
+            border-left: 1px dotted #000;
+            text-align: center;
+            line-height: 60px;
+        }
+        .pagination{
+            margin-left: 478px;
+        }
+        .pagination li{
+        	cursor:pointer;
+        }
+
+        /* end evaluate */
+
+        .footer{
+            width:100%;
+            height:100px;
+            text-align: center;
+            border-top: 1px solid #DBDBDB;
+            background: #EBEBEB;
+            line-height: 50px;
+            margin-top: 3px;
+        }
+
+
+        #sidebar{
+            position:fixed;
+            right:0px;
+            bottom:80px;
+            width:50px;
+        }
+        #sidebar #shopcarbar{
+            width:40px;
+            height:40px;
+            margin-bottom: 4px;
+
+        }
+        #collectbar{
+            width:44px;
+            height:44px;
+        }
+
+        #msg,#msg2{
+            position:fixed;
+            top:300px;
+            right:35px;
+            z-index:10000;
+            width:1px; height:52px;
+            line-height:52px;
+            font-size:20px;
+            text-align:center;
+            color:#fff;
+            background:#360;
+            display:none
+        }
+        .u-flyer{
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: fixed;
+            z-index: 9999;
+        }

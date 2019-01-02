@@ -1,0 +1,65 @@
+
+.sign_succ_calendar_title {
+	text-align: center;
+	/*width: 398px;*/
+	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+	background: #fff;
+}
+
+.sign_main {
+	border-top: 1px solid #e3e3e3;
+	font-family: "Microsoft YaHei",SimHei;
+	display: block;
+}
+
+.calendar_month_span {
+	display: inline;
+	line-height: 40px;
+	font-size: 16px;
+	color: #656565;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.sign_equal {
+	display:table;
+	border-collapse:separate;
+	width: 100%;
+}
+
+.sign_row {
+	display:table-row;
+}
+.sign_row div {
+	display:table-cell;
+	width:14.3%;
+	border-top: 1px solid #e3e3e3;
+	/*border-bottom: 1px solid #e3e3e3;*/
+	border-left: 1px solid #e3e3e3;
+	height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.sign_row .bold{
+	font-weight: bold;
+}
+.sign_row div:last-child { 
+	border-right: 1px solid #e3e3e3;
+}
+.sign_equal .sign_row:last-child div{
+	border-bottom: 1px solid #e3e3e3;
+}
+.sign_equal .on{
+	background: url(../../images/icon/sign_have.gif) no-repeat center;
+}
+
+.sign_contener,.sign_contener:visited {
+	line-height: 30px;	
+	background: #00a0e9;
+	border: none;
+	color: white;
+	border-radius: 30px;
+	padding: 0 10px;
+	font-size: 16px;
+}

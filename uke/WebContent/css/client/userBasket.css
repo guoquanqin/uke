@@ -1,0 +1,313 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; }
+    body{
+        padding-top: 50px;
+    }
+    li{
+        list-style-type:none;
+    }
+    a{
+        text-decoration:none;
+        color:#949494;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+
+/*start nav*/
+    #navlist{
+        position: absolute;
+        top: 51px;
+        width:95px;
+        height:140px;
+        background: #ffffff;
+        box-shadow: 1px 1px 10px 1px #969696;
+    }
+    #navlist li{
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+    #navlist li a{
+        text-decoration:none;
+        color:#949494;
+        margin-left: 20px;
+    }
+    #navlist li a:hover{
+        color:deepskyblue;
+    }
+
+    .v-enter,
+    .v-leave-to{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    .v-enter-active,
+    .v-leave-active{
+        transition: all 0.4s ease;
+    }
+
+    /* end nav*/
+
+    /* start content*/
+    .content{
+        width:100%;
+        background:	#EAEAEA ;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .leftsidebar{
+        width:21%;
+        height:700px;
+        margin-right: 20px;
+        margin-left: 14px;
+        float: left;
+    }
+
+    #userInfo{
+        width:100%;
+        height:32%;
+        margin-bottom: 15px;
+        background: white;
+        position: relative;
+    }
+    #user #userHead{
+        width:80px;
+        height:80px;
+        border-radius: 50%;
+        margin: 15px 0 0 80px;
+    }
+    #user #signbtn{
+        width:70px;
+        height:30px;
+        background:red;
+        color:white;
+        position: absolute;
+        top:40px;
+        right:0;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+        box-shadow: 1px 2px 8px 1px #8E8E8E;
+        cursor: pointer;
+    }
+    #user span p{
+        margin:5px 0 0 24px ;
+    }
+    #calendar{
+        pointer-events:none;
+    }
+    #signin{
+        margin-top:70px;
+    }
+    #sign_note {
+        text-align: center;
+        position: relative;
+        padding: 15px;
+        font-size: 14px;
+        pointer-events: none;
+    }
+    .userbox{
+        width:100%;
+        height:120px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .userbox img{
+        width:20px;
+        height:20px;
+        display: block;
+        margin-left: 18px;
+    }
+    .userbox span{
+        display: block;
+    }
+    .userbox span:nth-child(3),.userbox span:nth-child(4){
+        float: left;
+        margin:20px 20px 0 20px;
+    }
+
+    #list{
+        width:100%;
+        height:65%;
+        background:white;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .listhead img{
+        width:30px;
+        height:30px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .listhead{
+        border-bottom: 1px solid  red;
+        font-size: 18px;
+    }
+    .listcontent li{
+        margin:20px 0 10px 60px;
+        font-size: 15px;
+    }
+    .listcontent li a:hover{
+        color: red;
+    }
+    /* end content */
+
+
+    /* start rightsidebar*/
+    .rightsidebar{
+        width:76%;
+        padding-bottom: 30px;
+        float: left;
+        background: white;
+    }
+    .orderTop{
+        width:100%;
+        height:50px;
+        border-bottom: 1px solid #EEEEE0;
+    }
+
+    .orderTitle{
+        background:#F7F7F7;
+        margin-top:10px;
+        cursor: none;
+    }
+    .orderTitle button{
+        border:none;
+        height: 40px;
+        background: #F7F7F7;
+        float:left;
+
+    }
+    .orderTitle button:nth-child(1){
+        width:35%;
+    }
+    .orderTitle button:nth-child(2){
+        width:7%;
+    }
+    .orderTitle button:nth-child(3){
+        width:19%;
+    }
+    .orderTitle button:nth-child(4){
+        width:4%;
+    }
+    .orderTitle button:nth-child(5){
+        width:18%;
+    }
+    .orderTitle button:nth-child(6){
+        width:9%;
+    }
+
+    .order{
+        width:95%;
+        margin:33px 0 0 20px ;
+        border:1px solid #EEEEE0;
+        float: left;
+        display: block;
+    }
+    .orderHead{
+        height: 30px;
+        background: #F7F7F7;
+        padding: 5px 10px;
+
+    }
+    .orderDetail div{
+        display: block;
+        float: left;
+    }	
+    .orderHead input{
+        float: left;
+    }
+    .orderGoods{
+        width:264px;
+        padding-left: 10px;
+    }
+    .orderGoods img{
+        width:90px;
+        height:90px;
+        margin:5px 0;
+    }
+    .orderPrice{
+        width:103px;
+        padding-top:40px;
+        text-align: center;
+    }
+    .orderNum{
+        width:103px;
+        padding-top:40px;
+        text-align: center;
+
+    }
+    .orderSize{
+        width:99px;
+        padding-top:40px;
+        text-align: center;
+    }
+    .orderAllPrice{
+        width:116px;
+        height:100px;
+        padding-top:40px;
+        text-align: center;
+    }
+
+    .orderOperator{
+        width:100px;
+        padding-top:40px;
+        text-align: center;
+    }
+    #basket{
+
+        color:red;
+        font-size:18px;
+        margin-left:21px;
+        line-height:50px;
+    }
+    .select{
+        margin:18px 23px;
+    }
+    .select button{
+        float: right;
+
+    }
+
+    #accounts{
+        background: #F7F7F7;
+        height:60px;
+    }
+    #accounts #compute{
+        float: right;
+        height:60px;
+        padding: 0 28px;
+        margin-right: 20px;
+        font-size:18px;
+    }
+    #accounts #text{
+        float: left;
+        margin:20px 0 0 20px;
+    }
+    #accounts #text a{
+        margin-left:20px;
+    }
+    #accounts span{
+        margin-left: 40px;
+    }
+	.rightsidebar #notFound{
+    	width:319px;
+    	margin:10px 274px;
+    }
+	.delete{
+		cursor:pointer;
+	}
+	.deletePart{
+		cursor:pointer;
+	}
+
+    /* end recommand*/
+    .footer{
+        width:100%;
+        height:100px;
+        text-align: center;
+        border-top: 1px solid #DBDBDB;
+        background: #EBEBEB;
+        line-height: 50px;
+        margin-top:10px;
+    }

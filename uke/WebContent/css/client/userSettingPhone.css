@@ -1,0 +1,305 @@
+* { margin: 0; padding: 0; }
+    body{
+        padding-top: 50px;
+    }
+    li{
+        list-style-type:none;
+    }
+    a{
+        text-decoration:none;
+        color:#949494;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+
+/*start nav*/
+    #navlist{
+        position: absolute;
+        top: 51px;
+        width:95px;
+        height:140px;
+        background: #ffffff;
+        box-shadow: 1px 1px 10px 1px #969696;
+    }
+    #navlist li{
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+    #navlist li a{
+        text-decoration:none;
+        color:#949494;
+        margin-left: 20px;
+    }
+    #navlist li a:hover{
+        color:deepskyblue;
+    }
+
+    .v-enter,
+    .v-leave-to{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    .v-enter-active,
+    .v-leave-active{
+        transition: all 0.4s ease;
+    }
+
+    /* end nav*/
+
+    /* start content*/
+    .content{
+        width:100%;
+        background:	#EAEAEA ;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .leftsidebar{
+        width:21%;
+        height:552px;
+        margin-right: 20px;
+        margin-left: 14px;
+        float: left;
+    }
+
+    #userInfo{
+        width:100%;
+        height:42%;
+        margin-bottom: 15px;
+        background: white;
+        position: relative;
+    }
+    #user #userHead{
+        width:80px;
+        height:80px;
+        border-radius: 50%;
+        margin: 15px 0 0 80px;
+    }
+    #user #signbtn{
+        width:70px;
+        height:30px;
+        background:red;
+        color:white;
+        position: absolute;
+        top:40px;
+        right:0;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+        box-shadow: 1px 2px 8px 1px #8E8E8E;
+        cursor: pointer;
+    }
+    #user span p{
+        margin:5px 0 0 24px ;
+    }
+    #calendar{
+        pointer-events:none;
+    }
+    #signin{
+        margin-top:70px;
+    }
+    #sign_note {
+        text-align: center;
+        position: relative;
+        padding: 15px;
+        font-size: 14px;
+        pointer-events: none;
+    }
+    .userbox{
+        width:100%;
+        height:120px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .userbox img{
+        width:20px;
+        height:20px;
+        display: block;
+        margin-left: 18px;
+    }
+    .userbox span{
+        display: block;
+    }
+    .userbox span:nth-child(3),.userbox span:nth-child(4){
+        float: left;
+        margin:20px 20px 0 20px;
+    }
+
+    #list{
+        width:100%;
+        height:56%;
+        background:white;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .listhead img{
+        width:30px;
+        height:30px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .listhead{
+        border-bottom: 1px solid  red;
+        font-size: 18px;
+    }
+    .listcontent li{
+        margin:20px 0 10px 60px;
+        font-size: 15px;
+    }
+    .listcontent li a:hover{
+        color: red;
+    }
+    /* end content */
+
+
+    /* start rightsidebar*/
+    .rightsidebar{
+        width:76%;
+        float: left;
+        background: white;
+    }
+    .topbar{
+        padding-top:10px ;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .topbar #head{
+        width:90px;
+        height:90px;
+        border-radius: 50%;
+        margin-left:22px;
+    }
+    .topbar h4{
+        position: absolute;
+        top:10px;
+        left:40px;
+        color: #A8A8A8;
+        font-size: 15px;
+    }
+    .topbar #changehead{
+        width:20px;
+        height:20px;
+        position: absolute;
+        top:100px;
+        right:376px;
+    }
+    .topbar div{
+        width:130px;
+        height:120px;
+        margin:20px 0 0px 370px;
+    }
+    .topbar p{
+        text-align: center;
+        margin-top: 5px;
+
+    }
+
+    .bottombar .part1,.bottombar .part2,.bottombar .part3,.bottombar .part4{
+        width:95%;
+        border: 2px solid #EAEAEA;
+        margin-left: 20px;
+        margin-bottom:20px;
+    }
+    .bottombar .part1 div,.bottombar .part2 div,.bottombar .part3 div{
+        width: 250px;
+        float: left;
+    }
+    .bottombar .part1 li,.part2 li,.part3 li,.part4 li{
+        height:30px;
+        padding: 5px 10px;
+
+    }
+    .bottombar .part1 li:nth-child(1),.part2 li:nth-child(1),.part3 li:nth-child(1),
+    .bottombar #title{
+        background: #F2F2F2 ;
+        padding: 5px 10px;
+    }
+    .bottombar .part1 li:nth-child(3){
+        border-top:2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    .bottombar .part1 li:nth-child(4){
+        border-bottom: 2px solid #F2F2F2;
+    }
+    .part2 li:nth-child(3){
+        border-top:2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    .bottombar img{
+        width:15px;
+        height:15px;
+        margin-right: 7px;
+        margin-top:-3px;
+    }
+    .part1 span,.part2 span,.part3 span{
+        float: right;
+    }
+
+    .part4{
+        height:250px;
+    }
+    .part4 input{
+        float: left;
+    }
+    .part4 span{
+        height:65px;
+        display: block;
+        padding-top: 10px;
+    }
+
+    .part4 .form-control{
+        width:200px;
+        margin-right: 20px;
+    }
+    .part4 .form{
+        margin-left: 10px;
+    }
+    .part4 .form div{
+        width:100px;
+        float: left;
+    }
+    .part4 .form span:nth-child(2) input{
+        width:100px;
+    }
+
+    .part4 button{
+        margin-right: 20px;
+    }
+    #submit{
+        width:180px;
+        margin-left: 100px;
+    }
+	.edit{
+        float: right;
+    }
+	.inputfile {
+	    width: 0.1px; 
+	    height: 0.1px; 
+	    opacity: 0; 
+	    overflow: hidden; 
+	    position: absolute; 
+	    z-index: -1;
+	}
+	.topbar label{
+		cursor:pointer;
+	}
+	#picSubmit{
+		float:right;
+		margin:-69px -86px 0 0px;
+		opacity:0;
+	}
+	#picMess{
+		float:right;
+		margin:-31px -31px 0 0px;
+	}
+
+    /* end recommand*/
+    .footer{
+        width:100%;
+        height:100px;
+        text-align: center;
+        border-top: 1px solid #DBDBDB;
+        background: #EBEBEB;
+        line-height: 50px;
+        margin-top:10px;
+    }

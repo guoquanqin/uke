@@ -1,0 +1,237 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+    }
+
+    .top{
+        width: 100%;
+        position: fixed;
+        top:0;
+        z-index: 1;
+        height:60px;
+        background:white;
+    }
+    .top img{
+        width:25px;
+        height:25px;
+    }
+    .icon{
+        position: absolute;
+        top:15px;
+        right:10px;
+    }
+    .icon a{
+        margin:0 12px;
+    }
+
+    #prompt{
+        width:17px;
+        height:17px;
+        border-radius: 50%;
+        background: #ff5974;
+        position: absolute;
+        top:13px;
+        right:174px;
+        font-size: 12px;
+        color:white;
+        text-align: center;
+    }
+    .title{
+        width:180px;
+        height:100%;
+        background: #0f97ff;
+        color:white;
+        font-size: 15px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+
+    .mainLeft {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        bottom: 0;
+        background:#3c4559;
+        width: 180px;
+
+    }
+    .user{
+        color:white;
+
+    }
+    .user img{
+        width:70px;
+        height:70px;
+        border-radius:50%;
+        margin:10px 0 20px 50px;
+    }
+    .user span{
+        display: block;
+        margin-left:62px;
+    }
+    /* start sort*/
+    .sortable-accordion {
+        background:#1888c4;
+        overflow:hidden;
+        width:180px;
+    }
+    .sortable-accordion h3 {
+        color:#fff;
+        cursor:pointer;
+        margin:0;
+        padding:13px 16px 13px 38px;
+        background:#229bdc;
+        font-size:15px;
+        text-transform:uppercase;
+    }
+    .sortable-accordion h3:hover{
+        background:#1f96d6;
+    }
+    .sortable-accordion h3.current {
+        cursor:default
+    }
+    .sortable-accordion li{
+        font-size:14px;
+        color:#abe2ff;
+        font-weight:400;
+        padding: 11px 10px 11px 43px;
+        background: url("../../images/sort.png") 17px 13px no-repeat;
+        list-style:none;
+        position: relative;
+        border:none;
+
+    }
+    .sortable-accordion li:hover{
+        cursor:pointer;
+        background-color:#1784bf;
+    }
+    .ui-sortable-helper{
+        cursor:move; opacity:0.8; background-color:#157eb6;
+        box-shadow:0px 5px 10px -5px rgba(0, 0, 0, 0.3);
+    }
+    .ui-sortable-placeholder{
+        border: 2px dotted #0e9ce8 !important;
+        background:#158bca !important;
+        padding:11px 10px 11px 43px;
+        height:15px;
+    }
+    .options{
+        background:url("../../images/options.png") 0 0 no-repeat;
+        width:26px;
+        height:21px;
+        display:block;
+        position:absolute;
+        top:10px;
+        right:10px;
+    }
+    /* end sort*/
+
+    /* start mainContent*/
+    .mainContent {
+        height:100%;
+        width:100%;
+        padding-bottom: 100px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        /*height: 120%;*/
+        margin-left: 180px;
+        background: #edf1f6;
+        position: fixed;
+        top:60px;
+        bottom: 0;
+    }
+    .contentleft{
+        background: white;
+        height:660px;
+        width:1147px;
+        float: left;
+        margin-left: 20px;
+        padding:0 10px 0 10px;
+    }
+
+    .contentleft #leftTitle{
+        float: left;
+        margin:12px 0 5px 5px;
+        width:100%;
+    }
+    .contentleft #leftTitle img{
+        margin:0 10px 0 15px;
+        width:30px;
+        height:30px;
+        float: left;
+    }
+    .contentleft #leftTitle p{
+        font-size:21px;
+        float: left;
+        color:#0f97ff;
+    }
+    label{
+        font-weight: 400;
+    }
+
+    .orderTop{
+        font-size:15px;
+        padding-bottom: 10px;
+        box-shadow: 0px 7px 6px -8px #8c8c8c;
+    }
+    .orderTop a{
+        padding:10px;
+        margin:0 20px 10px 0;
+    }
+    .orderTop a:hover{
+        color:green;
+        border-bottom: 1px solid green;
+    }
+    .orderTop span{
+        font-size: 18px;
+        float: right;
+    }
+    .orderTop button{
+        margin:-10px 20px 0 0;
+        float: right;
+    }
+    #table{
+        margin-top:10px;
+        height:380px;
+        overflow-y: auto;
+    }
+    .table td span{
+        display: block;
+    }
+
+    .pagination{
+        margin:10px 0 0 300px;
+    }
+    .pagination span{
+        float: left;
+        margin:5px 20px 0 0;
+    }
+    
+    .order img{
+        margin:40px 0 0 450px;
+        width:200px;
+    }
+    .order p{
+        font-size: 20px;
+        margin:40px 0 0 510px;
+    }
+    /* end mainContent*/
+
+    .foot{
+        position:fixed;//页面内容不足屏幕高度时
+        width: 100%;
+        z-index: 1;
+        bottom: 0;
+        height: 100px;
+        background: #3c3c3c;
+    }

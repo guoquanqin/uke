@@ -1,0 +1,393 @@
+* { margin: 0; padding: 0; }
+    body{
+        padding-top: 70px;
+    }
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration:none;
+        color:#949494;
+    }
+    a:hover{
+        text-decoration:none;
+    }
+
+/*start nav*/
+    #navlist{
+        position: absolute;
+        top: 51px;
+        width:95px;
+        height:140px;
+        background: #ffffff;
+        box-shadow: 1px 1px 10px 1px #969696;
+    }
+    #navlist li{
+        margin-top: 5px;
+        margin-bottom: 7px;
+
+    }
+    #navlist li a{
+        text-decoration:none;
+        color:#949494;
+        margin-left: 20px;
+    }
+    #navlist li a:hover{
+        color:deepskyblue;
+    }
+
+    .v-enter,
+    .v-leave-to{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    .v-enter-active,
+    .v-leave-active{
+        transition: all 0.4s ease;
+    }
+
+    /* end nav*/
+
+    /* start search*/
+    #logo{
+        width:120px;
+        height:108px;
+        margin-left:50px;
+    }
+
+    .search{
+        margin-top:-18px;
+        position: relative;
+        box-shadow: 2px 1px 5px 1px #ABABAB;
+    }
+    .search form{
+        position: absolute;
+        top:20%;
+        right:30%;
+    }
+    .search form input{
+        height:45px;
+    }
+    .search form button{
+        height:45px;
+        width:70px;
+        margin-left: -10px;
+    }
+
+    .search ul{
+        margin-top:10px;
+    }
+    .search ul li{
+        float: left;
+        margin-right:10px;
+    }
+    .search ul li a:hover{
+        color:deepskyblue;
+        text-decoration:none;
+    }
+
+    .bottombar{
+        width:100%;
+        height:48px;
+        float: left;
+        margin-top:10px ;
+    }
+    .bottombar label{
+        width:220px;
+        height:48px;
+        text-align: center;
+        line-height: 48px;
+        background: deepskyblue;
+        color: white;
+        float: left;
+        font-size: 18px;
+    }
+    .bottombar ul li{
+        width:100px;
+        height:48px;
+        margin-left: 28px;
+
+    }
+    .bottombar ul li a{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .bottombar ul li:first-child{
+        margin-right: -14px;
+    }
+    .bottombar ul li img{
+        width:21px;
+        height:20px;
+    }
+    /*end search */
+
+    /* start mainnav*/
+
+    /*start leftsidebar */
+    .mainnav{
+
+        background: #EBEBEB;
+    }
+    .mainnav .container{
+        position: relative;
+    }
+    .mainnav .leftsidebar{
+        width:220px;
+        height:400px;
+        background: deepskyblue;
+        padding:0px;
+        margin-left: 15px;
+    }
+    .mainnav .leftsidebar #classify li{
+        margin-bottom: 8px;
+    }
+    .mainnav .leftsidebar #classify li:hover{
+        background: #87CEFF;
+        width:224px;
+    }
+    .mainnav .leftsidebar #classify li a{
+        color: white;
+        margin-left: 30px;
+    }
+    .mainnav .leftsidebar #classify li span{
+        float: right;
+        margin-right:10px;
+    }
+
+    .leftsidebar .panel{
+        position: absolute;
+        left: 220px;
+        top:0px;
+        width:400px;
+        height: 400px;
+        z-index: 1;
+    }
+    .leftsidebar .panel .panel-heading a{
+        margin-top:-15px;
+        float: right;
+    }
+    .leftsidebar .panel .panel-body ul li{
+        float: left;
+        margin-left: 20px;
+        margin-top:10px;
+    }
+    .leftsidebar .panel .panel-body ul li a{
+        text-decoration:none;
+        color:#949494;
+    }
+    .leftsidebar .panel .panel-body ul li a:hover{
+        color:#7B68EE;
+        text-decoration: none;
+    }
+    .pan1-enter,
+    .pan1-leave-to{
+        opacity: 0;
+
+    }
+
+    .pan1-enter-active,
+    .pan1-leave-active{
+        transition: all 0.4s ease;
+    }
+    /*end leftsidebar */
+
+    /* start centersidebar*/
+    .centersidebar{
+        width: 600px;
+        height:400px;
+    }
+    .centersidebar #myCarousel img{
+        width: 600px;
+        height:400px;
+    }
+    /* end centersidebar*/
+
+    /*start  rightsidebar*/
+    .rightsidebar{
+        width: 300px;
+        height:400px;
+        float: right;
+    }
+    .rightsidebar .panel{
+        background: white;
+        width:300px;
+        height:245px;
+        box-shadow: 0px 5px 6px 0px #BDBDBD;
+    }
+    .rightsidebar .panel .panel-heading{
+        text-align: center;
+    }
+    .rightsidebar .panel .panel-heading img{
+        width:80px;
+        height:80px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .rightsidebar .panel .panel-body img{
+        width:20px;
+        height:20px;
+        margin-left: 20px;
+    }
+    .rightsidebar .panel .panel-body ul{
+        width: 100%;
+        height: 100%;
+        margin-top:-30px;
+        margin-left: 15px;
+    }
+    .rightsidebar .panel .panel-body li{
+        float:left;
+        margin: 10px 50px 0px 24px;
+        width:60px;
+        height:50px;
+    }
+    .rightsidebar .record{
+        height:130px;
+        width:100%;
+        margin-top: 10px;
+        background: white;
+    }
+    .rightsidebar .record img{
+        width:100px;
+        height:100px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .rightsidebar .record img:hover{
+        box-shadow: 2px 1px 5px 1px #ABABAB;
+        transition: all 0.4s ease-in-out;
+    }
+    .rightsidebar .record span:nth-child(2){
+        margin: 10px 0px 0px 50px;
+    }
+    .rightsidebar .record span:nth-child(2) p{
+        margin: 0;
+    }
+    .rightsidebar .record p:nth-child(3){
+        cursor: pointer;
+    }
+    #infoModal{
+        margin-top:100px;
+    }
+    #infoModal .modal-body{
+        width:100%;
+        height:300px;
+    }
+    #infoModal .modal-body img{
+        width:200px;
+        height:200px;
+    }
+    #infoModal .modal-body #myCarouse2{
+        width:200px;
+        height:200px;
+        float:right;
+    }
+    #infoModal .summary p{
+        margin:0;
+    }
+    #infoModal .summary{
+        width:337px;
+        margin:-22px 0 0 10px;
+    }
+    #infoModal .summary span{
+        display: block;
+        margin-top:20px;
+
+    }
+    /*end rightsidebar */
+
+    /*start shop */
+    .shop .panel{
+        width:1157px;
+        margin-top: 30px;
+    }
+    .shop .panel-body ul{
+        margin-left:20px;
+    }
+    .shop .panel-body ul li{
+        width:300px;
+        height:300px;
+        margin: 30px 30px;
+        float: left;
+    }
+    .shop .detail span a:first-child{
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 10px;
+    }
+    .shop .detail span:first-child{
+        line-height: 30px;
+    }
+    .shop .panel-body ul li .icon{
+        width:300px;
+        height:200px;
+    }
+    .shopcar{
+        width:27px;
+        height:27px;
+        margin-left:99px;
+        cursor:pointer;
+    }
+    .collect{
+        width:30px;
+        height:30px;
+        margin-left: 30px;
+        cursor:pointer;
+    }
+    .shop .detail span a:hover{
+        color: red;
+        transition: all 0.3s ease;
+    }
+
+    /*end shop */
+
+
+
+    .footer{
+        width:100%;
+        height:100px;
+        text-align: center;
+        border-top: 1px solid #DBDBDB;
+        background: #EBEBEB;
+        line-height: 50px;
+    }
+
+    #sidebar{
+        position:fixed;
+        right:0px;
+        bottom:80px;
+        width:50px;
+    }
+    #sidebar #shopcarbar{
+        width:40px;
+        height:40px;
+        margin-bottom: 4px;
+
+    }
+    #collectbar{
+        width:44px;
+        height:44px;
+    }
+
+    #msg,#msg2{
+        position:fixed;
+        top:300px;
+        right:35px;
+        z-index:10000;
+        width:1px; height:52px;
+        line-height:52px;
+        font-size:20px;
+        text-align:center;
+        color:#fff;
+        background:#360;
+        display:none
+    }
+    .u-flyer{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: fixed;
+        z-index: 9999;
+    }
