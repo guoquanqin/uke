@@ -17,8 +17,8 @@ public class VerificationCode {
 		IAcsClient acsClient = new DefaultAcsClient(profile);//不必修改
 		SendSmsRequest request = new SendSmsRequest();//不必修改
 		request.setPhoneNumbers(phoneNumber);//****处填写接收方的手机号码
-		request.setSignName("郭权钦");//此处填写已申请的短信签名
-		request.setTemplateCode("SMS_139590030");//此处填写获得的短信模版CODE
+		request.setSignName("XXX");//此处填写已申请的短信签名
+		request.setTemplateCode("SMS_139590031");//此处填写获得的短信模版CODE
 		request.setTemplateParam("{\"code\":\""+code+"\"}");//笔者的短信模版中有${code}, 因此此处对应填写验证码 
 		SendSmsResponse sendSmsResponse = acsClient.getAcsResponse(request);//不必修改
 		return sendSmsResponse;
