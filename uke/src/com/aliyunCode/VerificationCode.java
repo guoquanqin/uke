@@ -12,7 +12,7 @@ public class VerificationCode {
 	public static SendSmsResponse sendSms(String phoneNumber,String code) throws ClientException {
 		System.setProperty("sun.net.client.defaultConnectTimeout", "10000");//不必修改
 		System.setProperty("sun.net.client.defaultReadTimeout", "10000");//不必修改
-	 	IClientProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAIoLbdM6MdYFE0", "dzLURWAHB1R24DMvH2XwVTtPr2Hbnq");//"***"分别填写自己的AccessKey ID和Secret
+	 	IClientProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");//"***"分别填写自己的AccessKey ID和Secret
 		DefaultProfile.addEndpoint("cn-hangzhou", "cn-hangzhou", "Dysmsapi", "dysmsapi.aliyuncs.com");//不必修改
 		IAcsClient acsClient = new DefaultAcsClient(profile);//不必修改
 		SendSmsRequest request = new SendSmsRequest();//不必修改
@@ -25,4 +25,3 @@ public class VerificationCode {
 	}
 	
 }
-
